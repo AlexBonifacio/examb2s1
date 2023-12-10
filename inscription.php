@@ -29,7 +29,7 @@
 							<div class="form_0">
 								<div class="info text-right">
 									<p class="text-white">Tous les champs sont obligatoires</p>
-									<h3 class="text-white">Lieu et évènement souhaités</h3>
+									<h3 class="text-white">Lieu et évènement souhaités.</h3>
 								</div>
 
 								

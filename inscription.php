@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./style/inscription.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Formulaire</title>
 </head>
 <body>
@@ -20,14 +23,31 @@ try {
   echo "Erreur de connexion: " . $e->getMessage();
 }
 ?>
-<header class="bandeau">
-	<a href="./index.php">Index</a>
+<header class="bandeau flex">
+	<img src="./img/logo.png" alt="Logo MYDIGITALSCHOOL">
+	
 </header>
 <main>
 	<section class="container1 flex">
 	<section class="information-decouverte">
-		<div>
+		<div class="title_left main_title">
+		
 			<h1 class="text-white">DÉCOUVREZ LES MÉTIERS DU DIGITAL GRÂCE AUX STAGES D’IMMERSION</h1>
+			<p class='text-white'>Plongez dans l’univers du digital pendant 2 jours en immersion à MyDigitalSchool Annecy, et découvrez le web en vous amusant comme jamais ! </p>
+		</div>
+		<div class="title_left numbers_left_hero text-white">
+			<div class="flex alignC relative">
+				<p class='big-numb'>2 </p><p class="absolute left80">JOURS DE STAGE</p>
+			</div>
+			<div class="flex alignC relative">
+				<p class='big-numb'>6</p> <p class="absolute left80">HEURES DE FORMATION</p>
+			</div>
+			<div class="flex alignC relative">
+				<p class='big-numb'>80</p> <p class="absolute left80">€ POUR DEUX JOURS</p>
+			</div>
+			<div class="flex alignC relative">
+				<p class='big-numb'>14</p> <p class="absolute left80">AVENUE DU RHÔNE,<br>74000 ANNECY</p>
+			</div>
 		</div>
 
 	</section>

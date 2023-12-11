@@ -10,9 +10,11 @@
 <body>
     <header>
         <a href="./inscription.php">Inscription</a>
+        <img src="./img/Group1.jpg" width="100%" alt="">
     </header>
     <main>
         <h1 data-value="MYDIGITALSCHOOL">MYDIGITALSCHOOL</h1>
+        
     </main>
     <footer>
         <script src="./script/title_effect.js"></script>

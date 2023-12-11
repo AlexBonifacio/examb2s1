@@ -131,13 +131,17 @@ try {
 
 								<div class="custom-checkbox required">
 
-								<input type="checkbox" id="edit-accord-rgpd-custom" name="active_profile" value="1" class="default" required/>
+								<input type="checkbox" id="edit-accord-rgpd-custom" name="active_profile" value="1" class="default" oninvalid="this.setCustomValidity('Vous devez accepter les termes et conditions')"  oninput="this.setCustomValidity('')"/>
 
 								<label class="custom-control-label flex" for="edit-accord-rgpd-custom">
 									<div class="text-white">
-										J’accepte qu’Eduservices recueille mes données et m’informe des formations et des actualités de l’école.* <a href="/mentions-legales" title="Mentions Légales"></a>
+										J’accepte qu’Eduservices recueille mes données et m’informe des formations et des actualités de l’école.* 
+										<a href="/mentions-legales" title="Mentions Légales"></a>
+										
+
 									</div>
 								</label>
+								<div class="error-message" style="display:none; color:red;">Vous devez accepter les termes et conditions</div>
 
 
 
@@ -147,12 +151,13 @@ try {
 								<div class="custom-control custom-checkbox mb-3">
 
 									
-									<input type="checkbox" id="accord-pay" name="active_profile" value="1" class="default" required/>
+									<input type="checkbox" id="accord-pay" name="active_profile" value="1" class="default" oninvalid="this.setCustomValidity('Vous devez accepter les termes et conditions')" oninput="this.setCustomValidity('')"/>
 									<label class="custom-control-label flex" for="accord-pay">
 										<div class="text-white">
 											J’accepte de m’acquitter de la somme de 80 euros le jour du stage.
 										</div>
 									</label>
+									<div class="error-message-pay" style="display:none; color:red;">Vous devez accepter de vous acquitter de la somme de 80 euros</div>
 
 
 
@@ -184,5 +189,43 @@ try {
 	</section>
 	</section>	
 </main>
+<footer>
+	
+<script>
+    document.getElementById('form-inscription-stage-decouverte').addEventListener('submit', function(e) {
+        var isCheckedRGPD = document.getElementById('edit-accord-rgpd-custom').checked;
+        var isCheckedPay = document.getElementById('accord-pay').checked;
+        var errorMessageRGPD = document.querySelector('.error-message');
+        var errorMessagePay = document.querySelector('.error-message-pay');
+
+        if (!isCheckedRGPD) {
+			console.log('Display block rgpd')
+            errorMessageRGPD.style.display = 'block';
+            e.preventDefault(); // Empêche la soumission du formulaire
+        } else {
+			console.log('Display none rgpd')
+            errorMessageRGPD.style.display = 'none';
+        }
+
+        if (!isCheckedPay) {
+			console.log('Display block pay')
+            errorMessagePay.style.display = 'block';
+            e.preventDefault(); // Empêche la soumission du formulaire
+        } else {
+			console.log('Display none pay')
+            errorMessagePay.style.display = 'none';
+        }
+    });
+	document.getElementById('edit-accord-rgpd-custom').addEventListener('click', function() {
+    var errorMessageRGPD = document.querySelector('.custom-checkbox .error-message');
+    errorMessageRGPD.style.display = 'none';
+});
+
+document.getElementById('accord-pay').addEventListener('click', function() {
+    var errorMessagePay = document.querySelector('.custom-control .error-message-pay');
+    errorMessagePay.style.display = 'none';
+});
+</script>
+</footer>
 </body>
 </html>

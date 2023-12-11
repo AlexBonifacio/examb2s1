@@ -1,5 +1,11 @@
 
-
+:root {
+    --main-blue: #2EC7D3;
+    --main-black: #3c3c3b;
+    --main-yellow: #ffbd1d;
+    --main-orange: #ff8a22;
+  }
+  
 
 * {
     margin: 0;
@@ -310,6 +316,10 @@ select.form-select {
     color: white;
     padding: 12px;
     padding-left: 20px;
+}
+
+.custom-select option {
+    background-color: var(--main-blue);
 }
 
 /* Checkbox style */

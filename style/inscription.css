@@ -1,7 +1,23 @@
+
+
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.w100 {
+    width: 100%;
+}
+
+
+.text-white {
+    color: white;
 }
 
 /**
@@ -171,15 +187,186 @@ th {
 /* Custom Styles
    ========================================================================== */
 
-/* Exemple de style personnalisé */
-.mon-style-personnalise {
-    color: blue;
+/* Header */
+
+.bandeau {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.50);
+
+    backdrop-filter: blur(2px);
 }
 
-/* Ajoutez ici d'autres styles personnalisés au besoin */
+
+
+
+/* Input style */
+
+input.form-control {
+    margin-top: 20px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: transparent; /* Rend le fond transparent */
+    color: white;
+    padding: 12px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+input.form-control::placeholder { /* Standard moderne */
+    color: white;
+    opacity: 1; /* Nécessaire pour certains navigateurs */
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+/* Select style */
+
+select.form-select {
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: transparent; /* Rend le fond transparent */
+    color: white;
+    padding: 12px;
+    padding-left: 20px;
+}
+
+/* Checkbox style */
+
+/* Styles pour les cases à cocher (checkboxes) */
+
+
+
+input[type="checkbox"].default {
+    display: none; /* Masque la checkbox par défaut */
+}
+
+.custom-checkbox label {
+    position: relative;
+    padding-left: 35px; /* Espace pour la fausse checkbox */
+    cursor: pointer;
+    display: inline-block;
+}
+
+.custom-checkbox label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px; /* Taille de la fausse checkbox */
+    height: 20px;
+    border: 2px solid #fff; /* Bordure de la fausse checkbox */
+    border-radius: 5px; /* Coins arrondis pour la fausse checkbox */
+    background-color: transparent;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + label:before {
+    background-color: white; /* Couleur de fond lorsque cochée */
+    /* Ajouter d'autres styles pour l'état cochée ici */
+}
+
+.custom-checkbox input[type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    left: 5px; /* Ajuster en fonction de la taille de la fausse checkbox */
+    top: 0px;
+    color: white; /* Couleur du symbole de coche */
+    font-size: 20px; /* Taille du symbole de coche */
+}
+
+
+.mb-3 {
+    margin-top: 12px;
+}
+
+
+/* Button style hero */
+
+.btn-primary {
+    cursor: pointer;
+    margin: auto;
+    margin-top: 32px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    background-color: transparent; /* Rend le fond transparent */
+    color: white;
+    padding: 12px 26px;
+
+
+}
+
+
+/* Styles personnalisés au besoin */
+
+.container1 {
+    background-image: url('../img/bg_img_hero.jpg');
+    background-size: cover;
+    justify-content: center;
+    gap: 32px;
+    height: 90vh;
+}
+
+.container1 section {
+    margin-top: 110px;
+    width: 27%;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.43);
+
+    backdrop-filter: blur(5.5px);
+   }
+
+.slider_bg_0 {
+    width : 65%;
+
+}
 
 
 .inscription-jpo {
-    margin: auto;
-    width: 80%;
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+
+
+ 
+} 
+
+.information-decouverte {
+
+}
+
+
+
+
+
+.title-form {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 32px;
+
+}
+
+.container-nom-prenom {
+    justify-content: space-between;
+
+}
+
+
+#edit-prenom, #edit-nom {
+    width: 143px;
+}
+
+#edit-niveau {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

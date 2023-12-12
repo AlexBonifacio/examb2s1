@@ -5,6 +5,7 @@
     --main-yellow: #ffbd1d;
     --main-orange: #ff8a22;
     --main-magenta: #F74D9D;
+    --main-white: #fff;
   }
   
 
@@ -17,9 +18,13 @@
 li {
     list-style: none;
 }
-
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
 .flex {
     display: flex;
+    
 }
 
 .w100 {
@@ -49,6 +54,25 @@ li {
 
 .text-shadow {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.60);
+}
+
+.btn-primary:hover {
+    color: var(--main-blue);
+    background-color: rgba(255,255,255,0.8);
+}
+
+.btn_main:hover {
+    color: var(--main-white);
+    background-color: var(--main-blue);
+    rotate: var(--random-deg);
+
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px var(--main-blue);
+    
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 
@@ -221,7 +245,17 @@ th {
 
 /* Header */
 
+.blur {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 25%;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(106, 205, 213, 0.66) 42.71%, rgba(46, 199, 211, 0.90) 79.69%);
+    transition: all 0.3s ease;
+}
+
 .bandeau {
+    z-index: 1;
     position: absolute;
     height: 80px;
     width: 100%;
@@ -356,13 +390,13 @@ input[type="checkbox"].default {
     width: 20px; /* Taille de la fausse checkbox */
     height: 20px;
     border: 2px solid #fff; /* Bordure de la fausse checkbox */
-    border-radius: 5px; /* Coins arrondis pour la fausse checkbox */
+    border-radius: 5px; 
     background-color: transparent;
 }
 
 .custom-checkbox input[type="checkbox"]:checked + label:before {
     background-color: white; /* Couleur de fond lorsque cochée */
-    /* Ajouter d'autres styles pour l'état cochée ici */
+    
 }
 
 .custom-checkbox input[type="checkbox"]:checked + label:after {
@@ -391,7 +425,7 @@ input[type="checkbox"].default {
     border-width: 2px;
 
     border-radius: 10px;
-    background-color: transparent; /* Rend le fond transparent */
+    background-color: transparent;
     color: white;
     padding: 8px 26px;
 
@@ -402,7 +436,9 @@ input[type="checkbox"].default {
 /* Styles personnalisés au besoin */
 
 .container1 {
+    position: relative;
     background-image: url('../img/bg_img_hero1.webp');
+    background-attachment: fixed;
     background-size: cover;
     justify-content: center;
     gap: 32px;
@@ -435,9 +471,6 @@ input[type="checkbox"].default {
  
 } 
 
-.information-decouverte {
-
-}
 
 
 
@@ -468,8 +501,13 @@ input[type="checkbox"].default {
 
 
 /* Menu de navigation */
+.section_nav {
+    position: sticky;
+    top: 0;
+}
 
 .li_nav ul{
+    font-size: 1.25rem;
     color: #fff;
 }
 
@@ -585,8 +623,7 @@ input[type="checkbox"].default {
     margin-bottom: 14px;
 
 }
-.img_hand_ia {
-}
+
 
 .div_prog_left .btn_main {
     
@@ -691,4 +728,48 @@ input[type="checkbox"].default {
 .info_prat p{
     margin-bottom: 8px;
 
+}
+
+/* Footer */
+
+footer {
+    margin-top: 140px;
+    gap: 200px;
+    padding: 96px 0px;
+    background-color: #2EC7D3;
+    justify-content: center;
+}
+
+.logo_sm img {
+    height: 49px;
+    
+}
+
+.logo_footer {
+    text-align: center;
+}
+
+footer li {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.logo_sm {
+    gap: 28px;
+    margin-top: 56px;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.image-container {
+    perspective: 1000px; /* Donne une perspective 3D */
+}
+
+.image-container img {
+    width: 100%; /* Ajustez selon vos besoins */
+    transition: transform 0.3s ease; /* Transition douce pour la rotation */
+    transform-style: preserve-3d; /* Garde le style 3D lors de la transformation */
 }

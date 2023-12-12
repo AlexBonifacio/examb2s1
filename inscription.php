@@ -222,7 +222,7 @@ try {
 
 	</section>
 	<section class="prog2jours flex">
-		<div class="div_prog_left">
+		<div class="div_prog_left flex">
 			<h3>LE PROGRAMME DES 2 JOURS</h3>
 			<h4>JOUR 1</h4>
 			<p>Initiation à la prise d’image avec smartphone et/ou appareil photo professionnel. Mettre en avant un produit grâce à l’utilisation d’outils professionnels (box photo, appareil professionnel, lumières…)</p>
@@ -230,11 +230,79 @@ try {
 			<h4 style="margin-top: 16px;">JOUR 2</h4>
 			<p>Apprentissage des bases du code d’un site web en réalisant une landing page avec un outil no-code.</p>
 			<p style="margin-top: 16px;">À la fin de la journée, vous saurez déjà rendre une page web accessible en ligne !</p>
+			<div>
 			<button class="btn_main">C'est génial, je m'inscris!</button>
+			</div>
 
 		</div>
 		<div class="img_hand_ia">
 			<img src="./img/robot_hand.webp" alt="Main de robot tenant une constellation d'étoiles">
+		</div>
+	</section>
+	<section class="section_icone">
+		<h2 class="text-white">À QUI S’ADRESSE CE STAGE ?</h2>
+		<div class="separation_h2"></div>
+		<div class="container_icone flex">
+			<div class="card_icone">
+				<div>
+				<img src="./img/diplome.png" alt="Icone représentant un livre">
+				</div>
+				<h3>LYCÉENS</h3>
+				<p class="text_icone" style="max-width:146px;">Vous avez entre 16 et 18 ans.</p>
+			</div>
+			<div class="card_icone">
+				<div >
+					<img src="./img/coiffe.png" alt="Icone représentant une coiffe">
+				</div>
+				<h3>DIPLÔMÉS</h3>
+				<p class="text_icone" style="max-width: 193px;">Vous êtes étudiant de Bac à Bac +4.</p>
+			</div>		
+			<div class="card_icone">
+				<div>
+				<img src="./img/malette.png" alt="Icone représentant une malette">
+				</div>
+				<h3>PROFESSIONNELS</h3>
+				<p class="text_icone">Vous êtes professionnel en reconversion.</p>
+			</div>
+		</div>
+
+	</section>
+	<section class="explore flex" style="flex-direction: row;">
+		<div class="div_prog_left flex">
+			<h3>EXPLOREZ LES MÉTIERS DU WEB ET DU DIGITAL</h3>
+
+			<p>Vous serez initié aux métiers clés du secteur digital : webmarketing, développement web, création numérique... </p>
+			<p style="margin-top: 16px;">Notre équipe d'experts vous guidera à travers les différents aspects de ces métiers passionnants. Vous comprendrez mieux les compétences requises et les opportunités de carrière dans ce secteur en pleine expansion.</p>
+			<p style="margin-top: 16px;">Au cours du stage, vous découvrirez comment créer du contenu digital captivant. </p>
+			<p style="margin-top: 16px;">Vous apprendrez à produire des images impactantes, des posts de réseaux sociaux créatifs, des vidéos époustouflantes, et des sites web innovants. Cette expérience vous donnera un avant-goût de ce que c'est que d'être un créateur de contenu numérique.</p>
+			<div>
+			<button class="btn_main">C'est génial, je m'inscris!</button>
+			</div>
+
+		</div>
+		<div class="img_hand_ia">
+			<img src="./img/homme_interagissant.webp" alt="Main de robot tenant une constellation d'étoiles">
+		</div>
+	</section>
+	<section class="prog2jours flex">
+		<div class="div_prog_left flex info_prat">
+			<h3>LES INFORMATIONS PRATIQUES</h3>
+			<h4>DATE ET DURÉE DU STAGE</h4>
+			<p>Le stage est sur 2 jours (jeudi 4 et vendredi 5 janvier 2024) et dure 6 heures au total.</p>
+			<h4>NIVEAU D’ENTRÉE</h4>
+			<p>Il est accessible à tous, de débutant à confirmé. Vous pouvez être étudiant, diplômé ou encore en reconversion professionnelle.</p>
+			<h4>NOMBRE D’ÉLÈVES</h4>
+			<p>Le nombre de places est limité pour garantir une expérience de qualité. C’est pourquoi nous vous recommandons de vous inscrire pour réservez votre place.</p>
+			<h4>TARIF DU STAGE</h4>
+			<p>80€ pour une immersion totale dans le monde du digital pendant 6h !</p>
+
+			<div>
+			<button class="btn_main">Parfait, je m'inscris!</button>
+			</div>
+
+		</div>
+		<div class="img_hand_ia">
+			<img src="./img/femme_travaillant_sur_pc.webp" alt="Main de robot tenant une constellation d'étoiles">
 		</div>
 	</section>
 </main>

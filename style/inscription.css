@@ -561,18 +561,18 @@ input[type="checkbox"].default {
 /* Prog 2 jours */
 
 .prog2jours {
+    display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
+    align-items: stretch;
     gap: 56px;
     
 }
 
 .div_prog_left {
-    position: relative;
     width: 581px;
-    align-self: flex-start;
+    flex-direction: column;
+    
 }
 .div_prog_left h3 {
     text-align: end;
@@ -586,12 +586,109 @@ input[type="checkbox"].default {
 
 }
 .img_hand_ia {
-    
 }
 
 .div_prog_left .btn_main {
-    position: absolute;
+    
     bottom: 0;
     right: 0;
     text-align: end;
+} 
+
+.div_prog_left > div {
+    margin-top: auto;
+    text-align: right;
+}
+
+
+/* Section blue icons */
+
+.section_icone {
+    margin-top: 140px;
+    margin-bottom: 140px;
+    background-color: #2EC7D3;
+    text-align: center;
+    padding: 56px 0px;
+}
+
+.section_icone .separation_h2 {
+    background-color: white;
+}
+
+.section_icone p, .section_icone h3 {
+    color: white
+}
+
+.container_icone {
+    justify-content: center;
+}
+
+.card_icone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18%;
+}
+
+.card_icone .text_icone {
+    font-size: 20px;
+}
+
+.card_icone div {
+    display: flex;
+    height: 67px;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.text_icone {
+    margin-top: 16px;
+}
+
+/* Explore */
+
+.explore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 56px;
+    margin-bottom: 120px;
+    
+}
+
+.explore .div_prog_left {
+    width: 581px;
+    flex-direction: column;
+    
+}
+.explore .div_prog_left h3 {
+    text-align: start;
+}
+
+.explore .div_prog_left h4 {
+    color: #2EC7D3;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 14px;
+
+}
+
+.explore p {
+    text-align: justify;
+}
+.explore .div_prog_left .btn_main {
+    text-align: end;
+} 
+
+.explore .div_prog_left > div {
+    margin-top: auto;
+    text-align: left;
+}
+
+/* Info pratique */
+
+.info_prat p{
+    margin-bottom: 8px;
+
 }

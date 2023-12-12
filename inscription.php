@@ -23,12 +23,17 @@ try {
   echo "Erreur de connexion: " . $e->getMessage();
 }
 ?>
+<div class="image-container">
+    <img src="./img/homme_interagissant.webp" alt="Description" />
+</div>
 <header class="bandeau flex">
 	<img src="./img/logo.png" alt="Logo MYDIGITALSCHOOL">
 	
 </header>
 <main>
+	
 	<section class="container1 flex">
+	<div class="blur"></div>
 	<section class="information-decouverte">
 		<div class="title_left main_title">
 		
@@ -191,11 +196,11 @@ try {
 	<section class="section_nav">
 		<nav>
 			<li class="li_nav flex">
-				<ul class="ulAfter">Le stage d'immersion</ul>
-				<ul class="ulAfter">Le programme</ul>
-				<ul class="ulAfter">Pour qui ?</ul>
-				<ul class="ulAfter">Les métiers du web</ul>
-				<ul>Les infos pratiques</ul>
+				<ul class="ulAfter"><a href="">Le stage d'immersion</a></ul>
+				<ul class="ulAfter"><a href="">Le programme</a></ul>
+				<ul class="ulAfter"><a href="">Pour qui ?</a></ul>
+				<ul class="ulAfter"><a href="">Les métiers du web</a></ul>
+				<ul><a href="">Les infos pratiques</a></ul>
 
 			</li>
 		</nav>
@@ -297,17 +302,42 @@ try {
 			<p>80€ pour une immersion totale dans le monde du digital pendant 6h !</p>
 
 			<div>
-			<button class="btn_main">Parfait, je m'inscris!</button>
+			<button class="btn_main" >Parfait, je m'inscris!</button>
 			</div>
 
 		</div>
 		<div class="img_hand_ia">
-			<img src="./img/femme_travaillant_sur_pc.webp" alt="Main de robot tenant une constellation d'étoiles">
+			<img src="./img/femme_travaillant_sur_pc.webp" style="display:block;" alt="Main de robot tenant une constellation d'étoiles">
 		</div>
 	</section>
 </main>
-<footer>
-	
+
+<footer class="flex">
+	<div>
+		<div class="logo_footer">
+			<img src="./img/logo_blanc.png" width=281 alt="Logo blanc MyDigitalSchool ">
+		</div>
+		<div class="logo_sm flex">
+
+			<a href="#"><img src="./img/vector_facebook.svg" alt=""></a>
+			<a href="#"><img src="./img/vector_insta.svg" alt=""></a>
+
+			<a href="#"><img src="./img/vector_tt.svg" alt=""></a>
+			<a href="#"><img src="./img/vector_yt.svg" style="height:42px" alt=""></a>
+			<a href="#"><img src="./img/vector_link.svg" alt=""></a>
+		</div>
+	</div>
+	<div>
+		<nav>
+			<ul class="text-white">
+				<li><a href="">Le stage d’immersion</a></li>
+				<li><a href="">Le programme</a></li>
+				<li><a href="">Pour qui?</a></li>
+				<li><a href="">Les métiers du web</a></li>
+				<li><a href="">Les infos pratiques</a></li>
+			</ul>
+		</nav>
+	</div>
 <script>
     document.getElementById('form-inscription-stage-decouverte').addEventListener('submit', function(e) {
         var isCheckedRGPD = document.getElementById('edit-accord-rgpd-custom').checked;
@@ -343,6 +373,7 @@ document.getElementById('accord-pay').addEventListener('click', function() {
     errorMessagePay.style.display = 'none';
 });
 </script>
+<script src="./script/rdm_deg.js"></script>
 </footer>
 </body>
 </html>

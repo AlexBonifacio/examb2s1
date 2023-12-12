@@ -33,7 +33,7 @@ try {
 		<div class="title_left main_title">
 		
 			<h1 class="text-white">DÉCOUVREZ LES MÉTIERS DU DIGITAL GRÂCE AUX STAGES D’IMMERSION</h1>
-			<p class='text-white'>Plongez dans l’univers du digital pendant 2 jours en immersion à MyDigitalSchool Annecy, et découvrez le web en vous amusant comme jamais ! </p>
+			<p class='text-white text-shadow'>Plongez dans l’univers du digital pendant 2 jours en immersion à MyDigitalSchool Annecy, et découvrez le web en vous amusant comme jamais ! </p>
 		</div>
 		<div class="title_left numbers_left_hero text-white">
 			<div class="flex alignC relative">
@@ -57,7 +57,7 @@ try {
 			<div class="container-form">
 				<div>
 					<div class="slider_text">
-						<h2 class="text-white title-form">INSCRIVEZ-VOUS</h2>
+						<h2 class="text-white title-form">INSCRIVEZ-VOUS !</h2>
 						
 					</div>
 				</div>
@@ -134,14 +134,14 @@ try {
 								<input type="checkbox" id="edit-accord-rgpd-custom" name="active_profile" value="1" class="default" oninvalid="this.setCustomValidity('Vous devez accepter les termes et conditions')"  oninput="this.setCustomValidity('')"/>
 
 								<label class="custom-control-label flex" for="edit-accord-rgpd-custom">
-									<div class="text-white">
+									<div class="text-white"><p class="text-shadow" style="font-size: 15px">
 										J’accepte qu’Eduservices recueille mes données et m’informe des formations et des actualités de l’école.* 
-										<a href="/mentions-legales" title="Mentions Légales"></a>
+										<a href="/mentions-legales" title="Mentions Légales"></a></p>
 										
 
 									</div>
 								</label>
-								<div class="error-message" style="display:none; color:red;">Vous devez accepter les termes et conditions</div>
+								<div class="error-message" style="display:none; color:white; font-weight: bold;">Vous devez accepter ce champ</div>
 
 
 
@@ -154,10 +154,10 @@ try {
 									<input type="checkbox" id="accord-pay" name="active_profile" value="1" class="default" oninvalid="this.setCustomValidity('Vous devez accepter les termes et conditions')" oninput="this.setCustomValidity('')"/>
 									<label class="custom-control-label flex" for="accord-pay">
 										<div class="text-white">
-											J’accepte de m’acquitter de la somme de 80 euros le jour du stage.
+											<p class="text-shadow" style="font-size: 15px;">J’accepte de m’acquitter de la somme de 80 euros le jour du stage.</p>
 										</div>
 									</label>
-									<div class="error-message-pay" style="display:none; color:red;">Vous devez accepter de vous acquitter de la somme de 80 euros</div>
+									<div class="error-message-pay" style="display:none; color:white; font-weight: bold;">Vous devez accepter ce champ.</div>
 
 
 
@@ -187,7 +187,56 @@ try {
 		</div>
 	</div>
 	</section>
-	</section>	
+	</section>
+	<section class="section_nav">
+		<nav>
+			<li class="li_nav flex">
+				<ul class="ulAfter">Le stage d'immersion</ul>
+				<ul class="ulAfter">Le programme</ul>
+				<ul class="ulAfter">Pour qui ?</ul>
+				<ul class="ulAfter">Les métiers du web</ul>
+				<ul>Les infos pratiques</ul>
+
+			</li>
+		</nav>
+	</section>
+	<section class="section_h2">
+		<h2 >MyDigitalSchool Annecy : Votre Passerelle vers le Futur du Digital</h2>
+		<div class="separation_h2"></div>
+		<p>Bienvenue à MyDigitalSchool Annecy, votre tremplin vers un avenir numérique passionnant. Notre stage de découverte de deux jours est une invitation à explorer le monde fascinant du web et du digital. Que vous soyez passionné de réseaux sociaux, de webdesign, de marketing digital ou de cybersécurité, ce stage est fait pour vous. Découvrez un éventail de métiers et de compétences dans un environnement innovant et dynamique.</p>
+
+	</section>
+	<section class="section_carte flex">
+		<div class="div_carte_left">
+			<h3>LE STAGE D’IMMERSION, UNE APPROCHE UNIQUE DE L’APPRENTISSAGE</h3>
+			<p>Chez MyDigitalSchool Annecy, nous révolutionnons l'éducation. Fini les cours magistraux ennuyeux ! Ici, tout est axé sur la pratique. </p>
+			<p>Vous travaillerez sur des projets concrets, apprendrez par l'action et développerez des compétences en temps réel. Nous vous proposons un apprentissage interactif, où chaque étudiant est acteur de son éducation.</p>
+			<p>Notre stage est une opportunité unique de découvrir le monde du digital de manière ludique et interactive. C'est l'occasion parfaite pour plonger dans une aventure unique, d'apprendre par la pratique, de créer des projets impressionnants, et de comprendre les coulisses du web.
+
+			</p>
+			<button class="btn_main">Super, je m'inscris !</button>
+		</div>
+		<div class="div_carte_right">
+			<img src="./img/carte-de-france.jpg" alt="Carte de France avec pointeur sur la ville d'Annecy">
+		</div>
+
+	</section>
+	<section class="prog2jours flex">
+		<div class="div_prog_left">
+			<h3>LE PROGRAMME DES 2 JOURS</h3>
+			<h4>JOUR 1</h4>
+			<p>Initiation à la prise d’image avec smartphone et/ou appareil photo professionnel. Mettre en avant un produit grâce à l’utilisation d’outils professionnels (box photo, appareil professionnel, lumières…)</p>
+			<p style="margin-top: 16px;">Rédaction d’un post en respectant les règles de la charte éditoriale partagée par le porteur de projet. Découverte des enjeux du métier de Community Manager.</p>
+			<h4 style="margin-top: 16px;">JOUR 2</h4>
+			<p>Apprentissage des bases du code d’un site web en réalisant une landing page avec un outil no-code.</p>
+			<p style="margin-top: 16px;">À la fin de la journée, vous saurez déjà rendre une page web accessible en ligne !</p>
+			<button class="btn_main">C'est génial, je m'inscris!</button>
+
+		</div>
+		<div class="img_hand_ia">
+			<img src="./img/robot_hand.webp" alt="Main de robot tenant une constellation d'étoiles">
+		</div>
+	</section>
 </main>
 <footer>
 	

@@ -45,7 +45,7 @@ try {
 				<p class='big-numb'>2 </p><p class="absolute left80">JOURS DE STAGE</p>
 			</div>
 			<div class="flex alignC relative">
-				<p class='big-numb'>6</p> <p class="absolute left80">HEURES DE FORMATION</p>
+				<p class='big-numb'>12</p> <p class="absolute left80">HEURES DE FORMATION</p>
 			</div>
 			<div class="flex alignC relative">
 				<p class='big-numb'>80</p> <p class="absolute left80">€ POUR DEUX JOURS</p>

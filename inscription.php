@@ -26,7 +26,7 @@ try {
 <!-- <div class="image-container">
     <img src="./img/homme_interagissant.webp" alt="Description" />
 </div> -->
-<header class="bandeau flex">
+<header class="bandeau flex" id="header">
 	<img src="./img/logo.png" alt="Logo MYDIGITALSCHOOL">
 	
 </header>
@@ -220,7 +220,7 @@ try {
 			<p>Notre stage est une opportunité unique de découvrir le monde du digital de manière ludique et interactive. C'est l'occasion parfaite pour plonger dans une aventure unique, d'apprendre par la pratique, de créer des projets impressionnants, et de comprendre les coulisses du web.
 
 			</p>
-			<button class="btn_main">Super, je m'inscris !</button>
+			<a href="#header"><button class="btn_main">Super, je m'inscris !</button></a>
 		</div>
 		<div class="div_carte_right">
 			<img src="./img/carte-de-france.jpg" alt="Carte de France avec pointeur sur la ville d'Annecy">
@@ -239,7 +239,7 @@ try {
 			<p>Apprentissage des bases du code d’un site web en réalisant une landing page avec un outil no-code.</p>
 			<p style="margin-top: 16px;">À la fin de la journée, vous saurez déjà rendre une page web accessible en ligne !</p>
 			<div>
-			<button class="btn_main">C'est génial, je m'inscris!</button>
+			<a href="#header"><button class="btn_main">C'est génial, je m'inscris!</button></a>
 			</div>
 
 		</div>
@@ -288,7 +288,7 @@ try {
 			<p style="margin-top: 16px;">Au cours du stage, vous découvrirez comment créer du contenu digital captivant. </p>
 			<p style="margin-top: 16px;">Vous apprendrez à produire des images impactantes, des posts de réseaux sociaux créatifs, des vidéos époustouflantes, et des sites web innovants. Cette expérience vous donnera un avant-goût de ce que c'est que d'être un créateur de contenu numérique.</p>
 			<div>
-			<button class="btn_main">C'est génial, je m'inscris!</button>
+			<a href="#header" ><button class="btn_main">C'est génial, je m'inscris!</button></a>
 			</div>
 		</div>
 
@@ -312,7 +312,7 @@ try {
 			<p>80€ pour une immersion totale dans le monde du digital pendant 6h !</p>
 
 			<div>
-			<button class="btn_main" >Parfait, je m'inscris!</button>
+			<a href="#header"><button class="btn_main" >Parfait, je m'inscris!</button></a>
 			</div>
 
 		</div>

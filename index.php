@@ -27,7 +27,7 @@ try {
     <img src="./img/homme_interagissant.webp" alt="Description" />
 </div> -->
 <header class="bandeau flex" id="header">
-	<img src="./img/logo.png" alt="Logo MYDIGITALSCHOOL">
+	<img src="./img/logo_mds_1.png" alt="Logo MYDIGITALSCHOOL">
 	
 </header>
 <main>

@@ -23,10 +23,10 @@ try {
   echo "Erreur de connexion: " . $e->getMessage();
 }
 ?>
-<div class="image-container">
+<!-- <div class="image-container">
     <img src="./img/homme_interagissant.webp" alt="Description" />
-</div>
-<header class="bandeau flex">
+</div> -->
+<header class="bandeau flex" id="header">
 	<img src="./img/logo.png" alt="Logo MYDIGITALSCHOOL">
 	
 </header>
@@ -45,7 +45,7 @@ try {
 				<p class='big-numb'>2 </p><p class="absolute left80">JOURS DE STAGE</p>
 			</div>
 			<div class="flex alignC relative">
-				<p class='big-numb'>6</p> <p class="absolute left80">HEURES DE FORMATION</p>
+				<p class='big-numb'>12</p> <p class="absolute left80">HEURES DE FORMATION</p>
 			</div>
 			<div class="flex alignC relative">
 				<p class='big-numb'>80</p> <p class="absolute left80">€ POUR DEUX JOURS</p>
@@ -196,11 +196,11 @@ try {
 	<section class="section_nav">
 		<nav>
 			<li class="li_nav flex">
-				<ul class="ulAfter"><a href="">Le stage d'immersion</a></ul>
-				<ul class="ulAfter"><a href="">Le programme</a></ul>
-				<ul class="ulAfter"><a href="">Pour qui ?</a></ul>
-				<ul class="ulAfter"><a href="">Les métiers du web</a></ul>
-				<ul><a href="">Les infos pratiques</a></ul>
+				<ul class="ulAfter"><a href="#section1">Le stage d'immersion</a></ul>
+				<ul class="ulAfter"><a href="#section2">Le programme</a></ul>
+				<ul class="ulAfter"><a href="#section3">Pour qui ?</a></ul>
+				<ul class="ulAfter"><a href="#section4">Les métiers du web</a></ul>
+				<ul><a href="#section5">Les infos pratiques</a></ul>
 
 			</li>
 		</nav>
@@ -211,7 +211,8 @@ try {
 		<p>Bienvenue à MyDigitalSchool Annecy, votre tremplin vers un avenir numérique passionnant. Notre stage de découverte de deux jours est une invitation à explorer le monde fascinant du web et du digital. Que vous soyez passionné de réseaux sociaux, de webdesign, de marketing digital ou de cybersécurité, ce stage est fait pour vous. Découvrez un éventail de métiers et de compétences dans un environnement innovant et dynamique.</p>
 
 	</section>
-	<section class="section_carte flex">
+	
+	<section class="section_carte flex" id="section1">
 		<div class="div_carte_left">
 			<h3>LE STAGE D’IMMERSION, UNE APPROCHE UNIQUE DE L’APPRENTISSAGE</h3>
 			<p>Chez MyDigitalSchool Annecy, nous révolutionnons l'éducation. Fini les cours magistraux ennuyeux ! Ici, tout est axé sur la pratique. </p>
@@ -219,14 +220,16 @@ try {
 			<p>Notre stage est une opportunité unique de découvrir le monde du digital de manière ludique et interactive. C'est l'occasion parfaite pour plonger dans une aventure unique, d'apprendre par la pratique, de créer des projets impressionnants, et de comprendre les coulisses du web.
 
 			</p>
-			<button class="btn_main">Super, je m'inscris !</button>
+			<a href="#header"><button class="btn_main">Super, je m'inscris !</button></a>
 		</div>
 		<div class="div_carte_right">
 			<img src="./img/carte-de-france.jpg" alt="Carte de France avec pointeur sur la ville d'Annecy">
 		</div>
 
 	</section>
-	<section class="prog2jours flex">
+	
+	
+	<section class="prog2jours flex" id="section2">
 		<div class="div_prog_left flex">
 			<h3>LE PROGRAMME DES 2 JOURS</h3>
 			<h4>JOUR 1</h4>
@@ -236,15 +239,17 @@ try {
 			<p>Apprentissage des bases du code d’un site web en réalisant une landing page avec un outil no-code.</p>
 			<p style="margin-top: 16px;">À la fin de la journée, vous saurez déjà rendre une page web accessible en ligne !</p>
 			<div>
-			<button class="btn_main">C'est génial, je m'inscris!</button>
+			<a href="#header"><button class="btn_main">C'est génial, je m'inscris!</button></a>
 			</div>
 
 		</div>
 		<div class="img_hand_ia">
 			<img src="./img/robot_hand.webp" alt="Main de robot tenant une constellation d'étoiles">
 		</div>
+	
 	</section>
-	<section class="section_icone">
+	
+	<section class="section_icone" id="section3">
 		<h2 class="text-white">À QUI S’ADRESSE CE STAGE ?</h2>
 		<div class="separation_h2"></div>
 		<div class="container_icone flex">
@@ -270,9 +275,11 @@ try {
 				<p class="text_icone">Vous êtes professionnel en reconversion.</p>
 			</div>
 		</div>
-
+	
 	</section>
-	<section class="explore flex" style="flex-direction: row;">
+
+	
+	<section class="explore flex" style="flex-direction: row;" id="section4">
 		<div class="div_prog_left flex">
 			<h3>EXPLOREZ LES MÉTIERS DU WEB ET DU DIGITAL</h3>
 
@@ -281,15 +288,18 @@ try {
 			<p style="margin-top: 16px;">Au cours du stage, vous découvrirez comment créer du contenu digital captivant. </p>
 			<p style="margin-top: 16px;">Vous apprendrez à produire des images impactantes, des posts de réseaux sociaux créatifs, des vidéos époustouflantes, et des sites web innovants. Cette expérience vous donnera un avant-goût de ce que c'est que d'être un créateur de contenu numérique.</p>
 			<div>
-			<button class="btn_main">C'est génial, je m'inscris!</button>
+			<a href="#header" ><button class="btn_main">C'est génial, je m'inscris!</button></a>
 			</div>
-
 		</div>
+
+		
 		<div class="img_hand_ia">
 			<img src="./img/homme_interagissant.webp" alt="Main de robot tenant une constellation d'étoiles">
 		</div>
+
 	</section>
-	<section class="prog2jours flex">
+	
+	<section class="prog2jours flex" id="section5">
 		<div class="div_prog_left flex info_prat">
 			<h3>LES INFORMATIONS PRATIQUES</h3>
 			<h4>DATE ET DURÉE DU STAGE</h4>
@@ -302,13 +312,14 @@ try {
 			<p>80€ pour une immersion totale dans le monde du digital pendant 6h !</p>
 
 			<div>
-			<button class="btn_main" >Parfait, je m'inscris!</button>
+			<a href="#header"><button class="btn_main" >Parfait, je m'inscris!</button></a>
 			</div>
 
 		</div>
 		<div class="img_hand_ia">
 			<img src="./img/femme_travaillant_sur_pc.webp" style="display:block;" alt="Main de robot tenant une constellation d'étoiles">
 		</div>
+	
 	</section>
 </main>
 
@@ -319,22 +330,23 @@ try {
 		</div>
 		<div class="logo_sm flex">
 
-			<a href="#"><img src="./img/vector_facebook.svg" alt=""></a>
-			<a href="#"><img src="./img/vector_insta.svg" alt=""></a>
+			<a href="https://www.facebook.com/my.digital.schoolFR/"><img src="./img/vector_facebook.svg" alt=""></a>
+			<a href="https://www.instagram.com/mydigitalschool/"><img src="./img/vector_insta.svg" alt=""></a>
 
-			<a href="#"><img src="./img/vector_tt.svg" alt=""></a>
-			<a href="#"><img src="./img/vector_yt.svg" style="height:42px" alt=""></a>
-			<a href="#"><img src="./img/vector_link.svg" alt=""></a>
+			<a href="https://www.tiktok.com/@mydigitalschool?lang=fr
+			"><img src="./img/vector_tt.svg" alt=""></a>
+			<a href="https://www.youtube.com/channel/UC-x9a8FpIuvGoiOkzgL6kFA"><img src="./img/vector_yt.svg" style="height:42px" alt=""></a>
+			<a href="https://www.linkedin.com/school/mydigitalschool/"><img src="./img/vector_link.svg" alt=""></a>
 		</div>
 	</div>
 	<div>
 		<nav>
 			<ul class="text-white">
-				<li><a href="">Le stage d’immersion</a></li>
-				<li><a href="">Le programme</a></li>
-				<li><a href="">Pour qui?</a></li>
-				<li><a href="">Les métiers du web</a></li>
-				<li><a href="">Les infos pratiques</a></li>
+				<li><a href="#section1">Le stage d’immersion</a></li>
+				<li><a href="#section2">Le programme</a></li>
+				<li><a href="#section3">Pour qui?</a></li>
+				<li><a href="#section4">Les métiers du web</a></li>
+				<li><a href="#section5">Les infos pratiques</a></li>
 			</ul>
 		</nav>
 	</div>

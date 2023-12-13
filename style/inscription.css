@@ -14,6 +14,13 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    transition: scroll-behavior 0.3s ease-in-out; /* Ajustez la durée selon vos préférences */
+}
 
 li {
     list-style: none;
@@ -21,6 +28,7 @@ li {
 a {
     text-decoration: none;
     color: var(--main-white);
+    transition: font-size 0.3s;
 }
 .flex {
     display: flex;
@@ -73,6 +81,29 @@ button:hover {
     
     transform: scale(1.1);
     transition: transform 0.3s ease;
+}
+
+footer li a:hover {
+    font-size: 22px;
+    
+}
+
+li a:hover {
+    text-shadow: 0px 0px 10px var(--main-white);
+}
+
+section[id^="section"] {
+    scroll-margin-top: 106px; /* Ajustez la hauteur en fonction de votre barre de navigation */
+
+}
+/* Ancres */
+
+section[id]::before {
+    content: "";
+    display: block;
+    height: 80px; /* Ajustez la hauteur en fonction de votre barre de navigation */
+    margin-top: -80px; /* Utilisez la même valeur que la hauteur pour compenser */
+    visibility: hidden;
 }
 
 
@@ -250,7 +281,7 @@ th {
     width: 100%;
     bottom: 0;
     height: 25%;
-    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(106, 205, 213, 0.66) 42.71%, rgba(46, 199, 211, 0.90) 79.69%);
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.00) 0%, rgba(67, 205, 215, 0.65) 34.38%, #43CDD7 76.56%);
     transition: all 0.3s ease;
 }
 
@@ -515,7 +546,7 @@ input[type="checkbox"].default {
     position: relative;
     z-index: 1000;
     padding: 40px 0px;
-    background-color: rgba(46, 199, 211, 0.60);
+    background: rgba(46, 199, 211, 0.90);
     display: flex;
     justify-content: center;
     
@@ -735,9 +766,13 @@ input[type="checkbox"].default {
 footer {
     margin-top: 140px;
     gap: 200px;
-    padding: 96px 0px;
+    padding: 72px 0px;
     background-color: #2EC7D3;
     justify-content: center;
+}
+
+footer nav {
+    width: 220px;
 }
 
 .logo_sm img {

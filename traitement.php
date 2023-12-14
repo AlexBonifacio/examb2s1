@@ -1,12 +1,12 @@
 <?php
 // Connexion à la base de données
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "forminscriptionstage";
+$servername = "127.0.0.1";
+$username = "xfdbkfqt_mds";
+$password = "MDSdecouverte74";
+$dbname = "xfdbkfqt_mds_stage_decouverte";
 
 try {
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password, );
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -17,8 +17,8 @@ try {
         $email = $_POST['email'];
         $telephone = $_POST['telephone'];
         $niveau = $_POST['niveau'];
-        $accord_pay = isset($_POST['accord-pay']) ? 1 : 0;
-        $accord_rgpd = isset($_POST['edit-accord-rgpd-custom']) ? 1 : 0;
+        $accord_pay = isset($_POST['accord_pay']) ? 1 : 0;
+        $accord_rgpd = isset($_POST['accord_rgpd']) ? 1 : 0;
         // ...autres champs...
 
         // Préparer et exécuter la requête SQL
@@ -27,6 +27,8 @@ try {
         $stmt->execute([$evenement_et_date, $prenom, $nom, $email, $telephone, $niveau, $accord_pay, $accord_rgpd]);
 
         echo "Inscription enregistrée avec succès";
+        var_dump($_POST);
+
     }
 } catch(PDOException $e) {
     echo "Erreur de connexion: " . $e->getMessage();

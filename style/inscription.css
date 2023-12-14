@@ -84,7 +84,9 @@ button:hover {
 }
 
 footer li a:hover {
-    font-size: 22px;
+    /* font-size: 22px; */
+    display: block;
+    transform: scale(1.2);
     
 }
 
@@ -97,14 +99,6 @@ section[id^="section"] {
 
 }
 /* Ancres */
-
-section[id]::before {
-    content: "";
-    display: block;
-    height: 80px; /* Ajustez la hauteur en fonction de votre barre de navigation */
-    margin-top: -80px; /* Utilisez la même valeur que la hauteur pour compenser */
-    visibility: hidden;
-}
 
 
 /**
@@ -130,17 +124,7 @@ section[id]::before {
     margin-bottom: 0.4em;
 }
 
-.form-required:after {
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    margin: 0 0.3em;
-    content: "";
-    vertical-align: super;
-    background-image: url(../../../../misc/icons/ee0000/required.svg);
-    background-repeat: no-repeat;
-    background-size: 6px 6px;
-}
+
 
 .form-item input.error,
 .form-item textarea.error,
@@ -393,7 +377,7 @@ select.form-select {
 }
 
 .custom-select option {
-    background-color: var(--main-blue);
+    background-color: var(--main-white);
 }
 
 /* Checkbox style */

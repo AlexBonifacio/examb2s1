@@ -19,17 +19,33 @@ try {
         $niveau = $_POST['niveau'];
         $accord_pay = isset($_POST['accord_pay']) ? 1 : 0;
         $accord_rgpd = isset($_POST['accord_rgpd']) ? 1 : 0;
-        // ...autres champs...
 
-        // Préparer et exécuter la requête SQL
         $sql = "INSERT INTO inscriptions (evenement_et_date, prenom, nom, email, telephone, niveau, accord_pay, accord_rgpd) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = $conn->prepare($sql);
         $stmt->execute([$evenement_et_date, $prenom, $nom, $email, $telephone, $niveau, $accord_pay, $accord_rgpd]);
 
-        echo "Inscription enregistrée avec succès";
-        var_dump($_POST);
 
+    
+    if ($stmt) {
+        // $email;  Adresse e-mail du participant
+        $subject = "Merci pour votre inscription";
+        $message = "Bonjour " . $prenom . ",\n\nMerci pour votre inscription à l'événement " . $evenement_et_date . ".\nNous sommes impatients de vous voir !\n\nEn attendant pensez à nous suivre sur nos réseaux!\n\nCordialement,\nL'équipe de l'événement";
+
+        // En-têtes additionnels
+        $headers = "From: mds-partiel@alexandre-bonifacio.mds-annecy.yt
+        \r\n"; // Remplacez avec votre adresse e-mail
+        $headers .= "Reply-To: mds-partiel@alexandre-bonifacio.mds-annecy.yt
+        "; // Adresse de réponse
+        $headers .= "X-Mailer: PHP/" . phpversion();
+
+        // Envoi de l'e-mail
+        mail($email, $subject, $message, $headers);
+
+        echo "Inscription enregistrée avec succès.";
+        header('Location: ./success_form');
+        exit;
     }
+}
 } catch(PDOException $e) {
     echo "Erreur de connexion: " . $e->getMessage();
 }

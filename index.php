@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="https://www.mydigitalschool.com/themes/custom/mds/img/favicon.png?v=1" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./style/inscription.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Formulaire</title>
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+	<meta name="description" content="Participez à un stage de découverte du digital, dispensé par des professionnels du web dans nos locaux 14 avenue du Rhône.">
+    <title>Stage de découverte dy digital | MyDigitalSchool Annecy</title>
 </head>
 <body>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "forminscriptionstage";
+$servername = "127.0.0.1";
+$username = "xfdbkfqt_mds";
+$password = "MDSdecouverte74";
+$dbname = "xfdbkfqt_mds_stage_decouverte";
 
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+  $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
-  echo "Erreur de connexion: " . $e->getMessage();
+  $e->getMessage();
 }
 ?>
 <!-- <div class="image-container">
@@ -31,27 +35,28 @@ try {
 	
 </header>
 <main>
-	
+<h1 class="flex main_h1">DÉCOUVREZ LES MÉTIERS DU DIGITAL GRÂCE AUX STAGES D’IMMERSION</h1>
 	<section class="container1 flex">
+    
 	<div class="blur"></div>
 	<section class="information-decouverte">
 		<div class="title_left main_title">
 		
-			<h1 class="text-white">DÉCOUVREZ LES MÉTIERS DU DIGITAL GRÂCE AUX STAGES D’IMMERSION</h1>
+			<h2 class="text-white">LES STAGES D’IMMERSION EN QUELQUES CHIFFRES</h2>
 			<p class='text-white text-shadow'>Plongez dans l’univers du digital pendant 2 jours en immersion à MyDigitalSchool Annecy, et découvrez le web en vous amusant comme jamais ! </p>
 		</div>
 		<div class="title_left numbers_left_hero text-white">
 			<div class="flex alignC relative">
-				<p class='big-numb'>2 </p><p class="absolute left80">JOURS DE STAGE</p>
+				<p class='big-numb anim-numb' data-to-value="2" data-duration="800">2 </p><p class="absolute left80">JOURS DE STAGE</p>
 			</div>
 			<div class="flex alignC relative">
-				<p class='big-numb'>12</p> <p class="absolute left80">HEURES DE FORMATION</p>
+				<p class='big-numb anim-numb' data-to-value="12" data-duration="1500">12</p> <p class="absolute left80">HEURES DE FORMATION</p>
 			</div>
 			<div class="flex alignC relative">
-				<p class='big-numb'>80</p> <p class="absolute left80">€ POUR DEUX JOURS</p>
+				<p class='big-numb anim-numb' data-from-value="70" data-to-value="80" data-duration="1500">80</p> <p class="absolute left80">€ POUR DEUX JOURS</p>
 			</div>
 			<div class="flex alignC relative">
-				<p class='big-numb'>14</p> <p class="absolute left80">AVENUE DU RHÔNE,<br>74000 ANNECY</p>
+				<p class='big-numb anim-numb' data-to-value="14" data-duration="1000">14</p> <p class="absolute left80">AVENUE DU RHÔNE,<br>74000 ANNECY</p>
 			</div>
 		</div>
 
@@ -78,7 +83,7 @@ try {
 								
 								<div class="">
 								
-									<select class=" webform-entity-select form-select required custom-select w100" data-drupal-selector="edit-evenement-et-date-de-l-evenement" data-msg-required="Le champ Événement et date de l’événement est requis." id="edit-evenement-et-date-de-l-evenement" name="evenement_et_date_de_l_evenement" required="required" aria-required="true"><option value="" selected="selected">Sélectionnez une date</option><option value="1">STUDENT EXPERIENCE #1 - ANNECY du 04/01/2024 à 09:00 - 05/01/2024 à 17:00</option><option value="2">STUDENT EXPERIENCE #2 - ANNECY du 28/01/2024 à 09:00 - 29/01/2024 à 17:00</option></select>
+									<select class=" webform-entity-select form-select required custom-select w100" data-drupal-selector="edit-evenement-et-date-de-l-evenement" data-msg-required="Le champ Événement et date de l’événement est requis." id="edit-evenement-et-date-de-l-evenement" name="evenement_et_date_de_l_evenement" required="required" aria-required="true"><option value="" selected="selected">Sélectionnez une date</option><option value="STUDENT EXPERIENCE #1 - ANNECY du 04/01/2024 à 09:00 - 05/01/2024 à 17:00">STUDENT EXPERIENCE #1 - ANNECY du 04/01/2024 à 09:00 - 05/01/2024 à 17:00</option><option value="STUDENT EXPERIENCE #2 - ANNECY du 28/01/2024 à 09:00 - 29/01/2024 à 17:00">STUDENT EXPERIENCE #2 - ANNECY du 28/01/2024 à 09:00 - 29/01/2024 à 17:00</option></select>
 								</div>
 
 
@@ -131,12 +136,12 @@ try {
 
 									
 								
-									<select class="form-select required custom-select w100" data-drupal-selector="edit-niveau" data-msg-required="Le champ Niveau d&#039;études est requis." id="edit-niveau" name="niveau" required="required" aria-required="true"><option value="" selected="selected">Niveau d&#039;études *</option><option value="517">Lycéen</option><option value="518">Post bac</option><option value="519">Bac + 3</option><option value="520">Bac + 4</option><option value="521">Réorientation</option></select>
+									<select class="form-select required custom-select w100" data-drupal-selector="edit-niveau" data-msg-required="Le champ Niveau d&#039;études est requis." id="edit-niveau" name="niveau" required="required" aria-required="true"><option value="" selected="selected">Niveau d&#039;études *</option><option value="Lycéen">Lycéen</option><option value="Post Bac">Post bac</option><option value="Bac +3">Bac + 3</option><option value="Bac +4">Bac + 4</option><option value="521">Réorientation</option></select>
 								</div>
 
 								<div class="custom-checkbox required">
 
-								<input type="checkbox" id="edit-accord-rgpd-custom" name="active_profile" value="1" class="default" oninvalid="this.setCustomValidity('Vous devez accepter les termes et conditions')"  oninput="this.setCustomValidity('')"/>
+								<input type="checkbox" id="edit-accord-rgpd-custom" name="accord_rgpd" value="1" class="default" oninvalid="this.setCustomValidity('Vous devez accepter les termes et conditions')"  oninput="this.setCustomValidity('')"/>
 
 								<label class="custom-control-label flex" for="edit-accord-rgpd-custom">
 									<div class="text-white"><p class="text-shadow" style="font-size: 15px">
@@ -156,7 +161,7 @@ try {
 								<div class="custom-control custom-checkbox mb-3">
 
 									
-									<input type="checkbox" id="accord-pay" name="active_profile" value="1" class="default" oninvalid="this.setCustomValidity('Vous devez accepter les termes et conditions')" oninput="this.setCustomValidity('')"/>
+									<input type="checkbox" id="accord-pay" name="accord_pay" value="1" class="default" oninvalid="this.setCustomValidity('Vous devez accepter les termes et conditions')" oninput="this.setCustomValidity('')"/>
 									<label class="custom-control-label flex" for="accord-pay">
 										<div class="text-white">
 											<p class="text-shadow" style="font-size: 15px;">J’accepte de m’acquitter de la somme de 80 euros le jour du stage.</p>
@@ -330,61 +335,27 @@ try {
 		</div>
 		<div class="logo_sm flex">
 
-			<a href="https://www.facebook.com/my.digital.schoolFR/"><img src="./img/vector_facebook.svg" alt=""></a>
-			<a href="https://www.instagram.com/mydigitalschool/"><img src="./img/vector_insta.svg" alt=""></a>
+			<a href="https://www.facebook.com/my.digital.schoolFR/" target="_blank" aria-label="Suivez-nous sur Facebook"><img src="./img/vector_facebook.svg" alt="Logo Facebook"></a>
+			<a href="https://www.instagram.com/mydigitalschool/" aria-label="Suivez-nous sur Instagram"><img src="./img/vector_insta.svg" alt="Logo Instagram"></a>
 
 			<a href="https://www.tiktok.com/@mydigitalschool?lang=fr
-			"><img src="./img/vector_tt.svg" alt=""></a>
-			<a href="https://www.youtube.com/channel/UC-x9a8FpIuvGoiOkzgL6kFA"><img src="./img/vector_yt.svg" style="height:42px" alt=""></a>
-			<a href="https://www.linkedin.com/school/mydigitalschool/"><img src="./img/vector_link.svg" alt=""></a>
+			" target="_blank" aria-label="Suivez-nous sur TikTok"><img src="./img/vector_tt.svg" alt="Logo TikTok"></a>
+			<a href="https://www.youtube.com/channel/UC-x9a8FpIuvGoiOkzgL6kFA" aria-label="Suivez-nous sur YouTube" target="_blank"><img src="./img/vector_yt.svg" style="height:42px" alt="Logo YouTube"></a>
+			<a href="https://www.linkedin.com/school/mydigitalschool/" target="_blank" aria-label="Suivez-nous sur LinkedIn"><img src="./img/vector_link.svg" alt="Logo Linkedin"></a>
 		</div>
 	</div>
 	<div>
 		<nav>
 			<ul class="text-white">
-				<li><a href="#section1">Le stage d’immersion</a></li>
-				<li><a href="#section2">Le programme</a></li>
-				<li><a href="#section3">Pour qui?</a></li>
-				<li><a href="#section4">Les métiers du web</a></li>
-				<li><a href="#section5">Les infos pratiques</a></li>
+				<li><a href="#section1" >Le stage d’immersion</a></li>
+				<li><a href="#section2" >Le programme</a></li>
+				<li><a href="#section3" >Pour qui?</a></li>
+				<li><a href="#section4" >Les métiers du web</a></li>
+				<li><a href="#section5" >Les infos pratiques</a></li>
 			</ul>
 		</nav>
 	</div>
-<script>
-    document.getElementById('form-inscription-stage-decouverte').addEventListener('submit', function(e) {
-        var isCheckedRGPD = document.getElementById('edit-accord-rgpd-custom').checked;
-        var isCheckedPay = document.getElementById('accord-pay').checked;
-        var errorMessageRGPD = document.querySelector('.error-message');
-        var errorMessagePay = document.querySelector('.error-message-pay');
 
-        if (!isCheckedRGPD) {
-			console.log('Display block rgpd')
-            errorMessageRGPD.style.display = 'block';
-            e.preventDefault(); // Empêche la soumission du formulaire
-        } else {
-			console.log('Display none rgpd')
-            errorMessageRGPD.style.display = 'none';
-        }
-
-        if (!isCheckedPay) {
-			console.log('Display block pay')
-            errorMessagePay.style.display = 'block';
-            e.preventDefault(); // Empêche la soumission du formulaire
-        } else {
-			console.log('Display none pay')
-            errorMessagePay.style.display = 'none';
-        }
-    });
-	document.getElementById('edit-accord-rgpd-custom').addEventListener('click', function() {
-    var errorMessageRGPD = document.querySelector('.custom-checkbox .error-message');
-    errorMessageRGPD.style.display = 'none';
-});
-
-document.getElementById('accord-pay').addEventListener('click', function() {
-    var errorMessagePay = document.querySelector('.custom-control .error-message-pay');
-    errorMessagePay.style.display = 'none';
-});
-</script>
 <script src="./script/rdm_deg.js"></script>
 </footer>
 </body>
